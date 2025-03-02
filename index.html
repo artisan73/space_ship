@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone Toolbar Example with Divs</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding-bottom: 60px; /* Reserve space for the toolbar */
+    }
+    /* Toolbar container */
+    .toolbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #333;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    }
+    /* Individual toolbar items */
+    .toolbar div {
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: background-color 0.2s ease;
+      border-radius: 4px;
+    }
+    .toolbar div:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Welcome to My Web App</h1>
+    <p>This is an example page demonstrating a bottom toolbar using div elements.</p>
+    <!-- Additional page content here -->
+  </main>
+
+  <!-- Toolbar using div elements -->
+  <div class="toolbar">
+    <div class="back">Back</div>
+    <div class="home">Home</div>
+    <div class="menu">Menu</div>
+  </div>
+</body>
+</html>
